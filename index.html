@@ -3,7 +3,7 @@
 <!-- This is head of html setup -->
 
 <head>
-  <title>Bootstrap Theme Company</title>
+  <title>Deliccio</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Webpage on restaurant">
@@ -16,26 +16,22 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet">
 
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-
-</head>
+ </head>
 <!--the body of html-->
 
-<body>
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60"></body>>
   <!--the header and nav-->
   <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
+    <section class="container">
+      <section class="navbar-header">
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
         <a class="navbar-brand" href="#myPage">Deliccio</a>
-      </div>
+      </section>
+            
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
           <li><a href="#about">ABOUT</a></li>
@@ -45,28 +41,47 @@
           <li><a href="#contact">CONTACT</a></li>
         </ul>
       </div>
-    </div>
+    </section>
   </nav>
   <!--jumbotron-->
   <div class="jumbotron text-center">
     <h1>Eat Healthy</h1>
     <p>Food is symbolic of love when words are inadequate- Alan D. Wolfelt </p>
-    <form class="form-inline">
-  
-      <div class="input-group">
-        <input type="email" class="form-control" size="50" placeholder="Email Address" required>
-        <div class="input-group-btn">
-          <button type="button" class="btn btn-danger">Subscribe</button>
+    <div class="container">
+      <h2>Subscribe</h2>
+      <!-- Trigger the modal with a button -->
+      <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">log in</button>
+    
+      <!-- Modal -->
+      <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+    
+          <!-- Modal content-->
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal">&times;</button>
+              <h4 class="modal-title">sign up/login in</h4>
+            </div>
+            <div class="modal-body">
+              <h4>enter your email address to subscribe to deliccio offers</h4>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div>
+    
         </div>
       </div>
-    </form>
+    
+    </div>
+    
   </div>
-  </div-->
+  
 
   <!-- Container (About Section) -->
-  <div class="container-fluid">
-    <div class="row">
-      <div class="col-sm-8">
+  <section class="container-fluid">
+    <section class="row">
+      <section class="col-sm-8">
         <h4>Good nutrition is an important part of leading a healthy lifestyle. Combined with physical activity, your
           diet can help you to reach and maintain a healthy weight, reduce your risk of chronic diseases (like heart
           disease and cancer), and promote your overall health.<br>
@@ -77,18 +92,18 @@
           continues to show its commitment to cleaner ingredient sourcing.</h4>
   
         <button class="btn btn-default btn-lg">Get in Touch</button>
-      </div>
+      </section>
       <div class="col-sm-4">
         <span class="glyphicon glyphicon-cutlery logo"></span>
       </div>
-    </div>
-  </div>
+    </section>
+  </section>
   
-  <div class="container-fluid bg-grey">
-    <div class="row">
-      <div class="col-sm-4">
+  <section class="container-fluid bg-grey">
+    <section class="row">
+      <section class="col-sm-4">
         <span class="glyphicon glyphicon-apple logo"></span>
-      </div>
+      </section>
       <div class="col-sm-8">
         <h2>Our Values</h2>
         <h4><strong>MISSION:</strong>Increase customer satisfaction and loyalty by providing the fastest and most
@@ -100,8 +115,8 @@
           <p><strong>VISION:</strong>To inspire and simplify healthy living.</p>
         </h4>
       </div>
-    </div>
-  </div>
+    </section>
+  </section>
 
 
 
@@ -150,31 +165,31 @@
   </div>
 
   <!-- Container (Chefs special) -->
-  <div class="container-fluid text-center bg-grey">
+  <section class="container-fluid text-center bg-grey">
     <h2>Signature Dishes</h2><br>
     <h4>Chef's Special</h4>
-    <div class="row text-center">
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="img/3.jpg" alt="Paris" width="400" height="300">
+    <section class="row text-center">
+      <section class="col-sm-4">
+        <section class="thumbnail">
+          <img src="img/3.jpg" alt="food" width="400" height="300">
           <p><strong>Smoked Pork Jowl with Pickles</strong></p>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="img/4.jpg" alt="New York" width="400" height="300">
+        </section>
+      </section>
+      <section class="col-sm-4">
+        <section class="thumbnail">
+          <img src="img/4.jpg" alt="food" width="400" height="300">
           <p><strong>Lamb Salad with Fregola</strong></p>
-        </div>
-      </div>
-      <div class="col-sm-4">
-        <div class="thumbnail">
-          <img src="img/5.jpg" alt="San Francisco" width="400" height="300">
+        </section>
+      </section>
+      <section class="col-sm-4">
+        <section class="thumbnail">
+          <img src="img/5.jpg" alt="food" width="400" height="300">
           <p><strong>Chocalate Caramel</strong></p>
-        </div>
-      </div>
-    </div>
-  </div>
-
+        </section>
+      </section>
+    </section>
+  </section>
+  
   <h2>Quotes</h2>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
@@ -185,17 +200,17 @@
     </ol>
   
     <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
+    <section class="carousel-inner" role="listbox">
+      <section class="item active">
         <h4>The only thing i like better than talking about food is eating<br><span>John Walters</span></h4>
-      </div>
-      <div class="item">
+      </section>
+      <section class="item">
         <h4>"There is no sincere love than the love of food"<br><span>George Bernard Shaw</span></h4>
-      </div>
-      <div class="item">
+      </section>
+      <section class="item">
         <h4>"Let food be thy medicine and medicine be thy food"<br><span>Hippocrates</span></h4>
-      </div>
-    </div>
+      </section>
+    </section>
   
     <!-- Left and right controls -->
     <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
@@ -207,20 +222,20 @@
       <span class="sr-only">Next</span>
     </a>
   </div>
-  </div>
+  
   <!-- Container (Pricing Section) -->
-  <div class="container-fluid">
-    <div class="text-center">
+  <section class="container-fluid">
+    <section class="text-center">
       <h2>Recipes</h2>
       <h4>Find and share everyday cooking inspiration on Deliccio</h4>
-    </div>
-    <div class="row">
-      <div class="col-sm-4 col-xs-12">
-        <div class="panel panel-default text-center">
-          <div class="panel-heading">
+    </section>
+    <section class="row">
+      <section class="col-sm-4 col-xs-12">
+        <section class="panel panel-default text-center">
+          <section class="panel-heading">
             <h1>Sweet and Sour Chicken</h1>
-          </div>
-          <div class="panel-body">
+          </section>
+          <section class="panel-body">
             <p><strong>"Pan fried chicken cubes served with a sweet and sour sauce." </strong></p>
             <p> In a saucepan, combine 1 1/2 cups water, sugar, vinegar, reserved pineapple juice, and orange food
               coloring. Heat to boiling. Turn off heat. Combine 1/4 cup cornstarch and 1/4 cup water; slowly stir into
@@ -230,20 +245,20 @@
               chicken is well coated.
               Heat oil in skillet or wok to 360 degrees F (180 degrees C). Fry chicken pieces in hot oil 10 minutes, or
               until golden. Remove chicken, and drain on paper towels. </p>
-          </div>
-          <div class="panel-footer">
+          </section>
+          <section class="panel-footer">
             <h3>$19</h3>
             <h4>complete recipe</h4>
             <button class="btn btn-lg">purchase</button>
-          </div>
-        </div>
-      </div>
-      <div class="col-sm-4 col-xs-12">
-        <div class="panel panel-default text-center">
-          <div class="panel-heading">
+          </section>
+        </section>
+      </section>
+      <section class="col-sm-4 col-xs-12">
+        <section class="panel panel-default text-center">
+          <section class="panel-heading">
             <h1>Bruschetta with Shallots</h1>
-          </div>
-          <div class="panel-body">
+          </section>
+          <section class="panel-body">
             <p><strong>"Pan fried chicken cubes served with a sweet and sour sauce." </strong></p>
             <p> In a saucepan, combine 1 1/2 cups water, sugar, vinegar, reserved pineapple juice, and orange food
               coloring.
@@ -257,21 +272,21 @@
               Heat oil in skillet or wok to 360 degrees F (180 degrees C). Fry chicken pieces in hot oil 10 minutes, or
               until
               golden. Remove chicken, and drain on paper towels. </p>
-          </div>
-          <div class="panel-footer">
+          </section>
+          <section class="panel-footer">
             <h3>$19</h3>
             <h4>complete recipe</h4>
             <button class="btn btn-lg">purchase</button>
-          </div>
-        </div>
-      </div>
+            </section>
+          </section>
+        </section>
 
-      <div class="col-sm-4 col-xs-12">
-        <div class="panel panel-default text-center">
-          <div class="panel-heading">
+      <section class="col-sm-4 col-xs-12">
+        <section class="panel panel-default text-center">
+          <section class="panel-heading">
             <h1>Ceaser salad with sprouts</h1>
-          </div>
-          <div class="panel-body">
+          </section>
+          <section class="panel-body">
             <p><strong>"Pan fried chicken cubes served with a sweet and sour sauce." </strong></p>
             <p> In a saucepan, combine 1 1/2 cups water, sugar, vinegar, reserved pineapple juice, and orange food
               coloring.
@@ -285,15 +300,14 @@
               Heat oil in skillet or wok to 360 degrees F (180 degrees C). Fry chicken pieces in hot oil 10 minutes, or
               until
               golden. Remove chicken, and drain on paper towels. </p>
-          </div>
-          <div class="panel-footer">
+          </section>
+          <section class="panel-footer">
             <h3>$19</h3>
             <h4>complete recipe</h4>
             <button class="btn btn-lg">purchase</button>
-          </div>
-        </div>
-      </div>
-      </div-->
+          </section>
+        </section>
+      </section>
       
       <!-- Image of location/map -->
       <div style="width: 100%"><iframe width="100%" height="400" src="https://maps.google.com/maps?width=100%&height=400&hl=en&q=NIIT%20-%20Koramangala%2C%20Bengaluru%2C%20Karnataka+(map)&ie=UTF8&t=&z=15&iwloc=B&output=embed"
@@ -343,6 +357,8 @@
 
 
       <!-- </footer> -->
-
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    
 </body>
 </html>
